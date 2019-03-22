@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">ZakatCalculator</string>
+    <string name="zakat_fitrah">Zakat Fitrah</string>
+    <string name="zakat_emas">Zakat Emas</string>
+    <string name="zakat_perak">Zakat Perak</string>
+    <string name="zakat_rikaz">Zakat Rikaz</string>
+    <string name="zakat_hewan">Zakat Hewan</string>
+    <string name="zakat_npertanian">Zakat\nPertanian</string>
+    <string name="memiliki_kelebihan_bahan_makanan_pokok_untuk_diri_sendiri_dan_orang_yang_ditanggung_anak_istri_dll">Memiliki kelebihan bahan makanan pokok untuk diri sendiri dan orang yang ditanggung (anak, istri, dll) ?</string>
+    <string name="ya">YA</string>
+    <string name="tidak">TIDAK</string>
+    <string name="harga_beras">Harga Beras</string>
+    <string name="ex_15000">Ex: 15000</string>
+    <string name="apakah_saya_wajib_membayar_zakat">Apakah saya wajib membayar zakat ?</string>
+    <string name="jumlah_zakat_yang_harus_dikeluarkan">Jumlah zakat yang harus dikeluarkan</string>
+    <string name="submit">Submit</string>
+    <string name="harga_emas_saat_ini_gr">Harga emas saat ini /gr</string>
+    <string name="ex_500000">Ex : 500000</string>
+    <string name="jumlah_emas_yang_dimiliki_dalam_gr">Jumlah emas yang dimiliki (dalam gr)</string>
+    <string name="jumlah_perak_yang_dimiliki_saata_ini_dalam_gr">Jumlah perak yang dimiliki saata ini (dalam gr)</string>
+    <string name="harga_perak_saat_ini_per_gr">Harga perak saat ini (per gr)</string>
+    <string name="jumlah_barang_yang_ditemukan">Jumlah barang yang ditemukan</string>
+    <string name="ex_100000000">Ex : 100000000</string>
+    <string name="sistem_irigasi">Sistem Irigasi</string>
+    <string name="irigasi">Irigasi</string>
+    <string name="tadah_hujan">Tadah Hujan</string>
+    <string name="harga_beras_saat_ini_per_kg">Harga beras saat ini (per Kg)</string>
+    <string name="jumlah_beras_hasil_panen_kg">Jumlah beras hasil panen (Kg)</string>
+    <string name="kg">Kg</string>
+    <string name="kambing">Kambing</string>
+    <string name="sapi">Sapi</string>
+    <string name="jumlah_hewan_yang_dimiliki">Jumlah hewan yang dimiliki</string>
+</resources>

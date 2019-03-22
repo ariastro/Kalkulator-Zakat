@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".kalkulatorActivity.ZakatPertanianActivity">
+
+    <TextView
+        android:id="@+id/tv_jml_panen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/neosansprobold"
+        android:text="@string/jumlah_beras_hasil_panen_kg"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/jml_panen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:inputType="number"
+        android:layout_below="@id/tv_jml_panen"
+        android:hint="@string/kg"/>
+
+    <View
+        android:id="@+id/linee"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/jml_panen"
+        android:background="#E0E0E0">
+
+    </View>
+
+    <TextView
+        android:id="@+id/tv_syarat_pertanian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/neosansprobold"
+        android:text="@string/sistem_irigasi"
+        android:textColor="#000"
+        android:layout_below="@id/linee"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rgroup_pertanian"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_syarat_pertanian">
+
+        <RadioButton
+            android:id="@+id/rb_irigasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/neosansprobold"
+            android:text="@string/irigasi"
+            android:checked="true"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rb_tadah_hujan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/neosansprobold"
+            android:text="@string/tadah_hujan"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/rgroup_pertanian"
+        android:background="#E0E0E0">
+
+    </View>
+
+    <TextView
+        android:id="@+id/tv_harga_beras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/neosansprobold"
+        android:text="@string/harga_beras_saat_ini_per_kg"
+        android:textColor="#000"
+        android:layout_below="@id/line"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/harga_beras_now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:inputType="number"
+        android:layout_below="@id/tv_harga_beras"
+        android:hint="@string/ex_15000"/>
+
+    <Button
+        android:id="@+id/btnSubmitPertanian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:layout_below="@id/harga_beras_now"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_nisab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/neosansprobold"
+        android:text="@string/apakah_saya_wajib_membayar_zakat"
+        android:textColor="#000"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/btnSubmitPertanian"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/nisab_pertanian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_nisab"
+        android:maxLines="1"
+        android:editable="false"/>
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/nisab_pertanian"
+        android:background="#E0E0E0">
+
+    </View>
+
+    <TextView
+        android:id="@+id/tv_jml_pertanian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/neosansprobold"
+        android:text="@string/jumlah_zakat_yang_harus_dikeluarkan"
+        android:textColor="#000"
+        android:layout_below="@id/line3"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/jml_pertanian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_jml_pertanian"
+        android:maxLines="1"
+        android:editable="false"/>
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".kalkulatorActivity.ZakatRikazActivity">
+
+    <TextView
+        android:id="@+id/tv_syarat_rikaz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/neosansprobold"
+        android:text="@string/jumlah_barang_yang_ditemukan"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/jml_temuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:inputType="number"
+        android:layout_below="@id/tv_syarat_rikaz"
+        android:hint="@string/ex_100000000" />
+
+    <Button
+        android:id="@+id/btnSubmitRikaz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:layout_below="@id/jml_temuan"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_nisab_rikaz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/neosansprobold"
+        android:text="@string/apakah_saya_wajib_membayar_zakat"
+        android:textColor="#000"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/btnSubmitRikaz"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/nisab_rikaz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_nisab_rikaz"
+        android:maxLines="1"
+        android:editable="false"/>
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/nisab_rikaz"
+        android:background="#E0E0E0">
+
+    </View>
+
+    <TextView
+        android:id="@+id/tv_jml_rikaz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/neosansprobold"
+        android:text="@string/jumlah_zakat_yang_harus_dikeluarkan"
+        android:textColor="#000"
+        android:layout_below="@id/line3"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/jml_zakat_rikaz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_jml_rikaz"
+        android:maxLines="1"
+        android:editable="false"/>
+
+</RelativeLayout>

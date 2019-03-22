@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".kalkulatorActivity.ZakatHewanActivity">
+
+    <TextView
+        android:id="@+id/tv_jenis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/neosansprobold"
+        android:text="@string/sistem_irigasi"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rgroup_jenis_hewan"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_jenis">
+
+        <RadioButton
+            android:id="@+id/rb_kambing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/neosansprobold"
+            android:text="@string/kambing"
+            android:checked="true"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rb_sapi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/neosansprobold"
+            android:text="@string/sapi"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/linee"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/rgroup_jenis_hewan"
+        android:background="#E0E0E0">
+
+    </View>
+
+    <TextView
+        android:id="@+id/tv_jml_hewan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/neosansprobold"
+        android:text="@string/jumlah_hewan_yang_dimiliki"
+        android:textColor="#000"
+        android:layout_below="@id/linee"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/jml_hewan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:inputType="number"
+        android:layout_below="@id/tv_jml_hewan" />
+
+    <Button
+        android:id="@+id/btnSubmitHewan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:layout_below="@id/jml_hewan"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_nisab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/neosansprobold"
+        android:text="@string/apakah_saya_wajib_membayar_zakat"
+        android:textColor="#000"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/btnSubmitHewan"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/nisab_hewan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_nisab"
+        android:maxLines="1"
+        android:editable="false"/>
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/nisab_hewan"
+        android:background="#E0E0E0">
+
+    </View>
+
+    <TextView
+        android:id="@+id/tv_jml_zakat_hewan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/neosansprobold"
+        android:text="@string/jumlah_zakat_yang_harus_dikeluarkan"
+        android:textColor="#000"
+        android:layout_below="@id/line3"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/jml_zakat_hewan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_jml_zakat_hewan"
+        android:maxLines="3"
+        android:editable="false"/>
+
+</RelativeLayout>

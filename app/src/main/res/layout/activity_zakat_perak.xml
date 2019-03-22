@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".kalkulatorActivity.ZakatPerakActivity">
+
+    <TextView
+        android:id="@+id/tv_syarat_perak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/neosansprobold"
+        android:text="@string/jumlah_perak_yang_dimiliki_saata_ini_dalam_gr"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/jml_perak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:inputType="number"
+        android:layout_below="@id/tv_syarat_perak"
+        android:hint="gr" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/jml_perak"
+        android:background="#E0E0E0">
+
+    </View>
+
+    <TextView
+        android:id="@+id/tv_harga_perak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/neosansprobold"
+        android:text="@string/harga_perak_saat_ini_per_gr"
+        android:textColor="#000"
+        android:layout_below="@id/line"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/harga_perak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:inputType="number"
+        android:layout_below="@id/tv_harga_perak"
+        android:hint="@string/ex_500000"/>
+
+    <Button
+        android:id="@+id/btnSubmitPerak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:layout_below="@id/harga_perak"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_nisab_perak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/neosansprobold"
+        android:text="@string/apakah_saya_wajib_membayar_zakat"
+        android:textColor="#000"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/btnSubmitPerak"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/nisab_perak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_nisab_perak"
+        android:maxLines="1"
+        android:editable="false"/>
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/nisab_perak"
+        android:background="#E0E0E0">
+
+    </View>
+
+    <TextView
+        android:id="@+id/tv_jml_perak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/neosansprobold"
+        android:text="@string/jumlah_zakat_yang_harus_dikeluarkan"
+        android:textColor="#000"
+        android:layout_below="@id/line3"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/jml_zakat_perak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_jml_perak"
+        android:maxLines="1"
+        android:editable="false"/>
+
+</RelativeLayout>
